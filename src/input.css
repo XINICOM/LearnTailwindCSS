@@ -20,7 +20,6 @@ html {
     @apply max-w-6xl mx-auto px-8
 }
 
-/* todo */
-.text-size-color {
+.highlight-color {
     @apply text-red-500 sm:text-orange-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500 2xl:text-purple-500
 }
