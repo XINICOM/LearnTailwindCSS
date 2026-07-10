@@ -10,16 +10,28 @@ module.exports = {
         },
         colors: {
             border:{
-                light:'#EBEBEB',
-                dark:'',
+                light:'#E5E5E5',
+                dark:'#888888',
+            },
+            textContent:{
+                light: '#121212',
+                dark: '#D6D2CD',
             },
             textPrimary:{
                 light: '#000000',
                 dark: '#FFFFFF',
             },
+            textSecondary:{
+                light: '#666666',
+                dark: '#ABABAB',
+            },
             bg0:{
                 light:'#FFFFFF',
                 dark:'#121212',
+            },
+            bg1:{
+                light:'#FAFAFA',
+                dark:'#272727',
             }
         },
         },

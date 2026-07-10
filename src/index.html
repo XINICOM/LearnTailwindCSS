@@ -8,17 +8,17 @@
   <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="antialiased dark:bg-black dark:text-white">
+<body class="antialiased bg-bg0-light text-textPrimary-light dark:bg-bg0-dark dark:text-textPrimary-dark">
   <main class="w-screen min-h-screen">
     <!-- NAV BAR -->
-    <nav class="h-16 border-b border-border-light border-opacity-100 bg-white/70 dark:bg-black/70 backdrop-blur-sm
+    <nav class="h-16 border-b border-border-light dark:border-border-dark border-opacity-100 bg-white/70 dark:bg-bg0-dark/60 backdrop-blur-sm
                     fixed top-0 left-0 right-0">
       <div class="max-w-7xl mx-auto h-full
                         px-4 
                         flex justify-between items-center">
         <div class="font-extrabold text-2xl font-mono">
           <span class="cursor-pointer text-btn">XINICOM</span>
-          <span class="hightlight-color font-sans font-normal">/</span>
+          <span class="highlight-color font-sans font-normal">/</span>
           <span class="font-medium">blog</span>
         </div>
         <div class="hidden lg:flex flex-row gap-8 text-lg capitalize font-sans">
@@ -32,7 +32,7 @@
       </div>
     </nav>
     <!-- HERO PAGE -->
-    <div class="border-b border-gray-300 w-full">
+    <div class="border-b border-border-light dark:border-border-dark w-full">
       <div class="flex flex-row justify-center items-center gap-16
                         h-screen max-w-6xl mx-auto px-4">
         <!-- 个人图标？ -->
@@ -45,15 +45,14 @@
                                 flex flex-col lg:flex-row lg:hidden
                                 justify-start">
             <div class="text-6xl font-bold
-                                max-lg:border-b max-lg:border-gray-300">
+                                max-lg:border-b max-lg:border-border-light max-lg:dark:border-border-dark">
               XINICOM's
             </div>
             <div class="text-4xl lg:text-6xl font-medium max-lg:text-right">
               Dev Blog
             </div>
           </div>
-          <div class="font-sans text-xl lg:text-2xl
-                          text-gray-500 font-thin">
+          <div class="font-sans text-xl lg:text-2xl font-thin text-textSecondary-light dark:text-textSecondary-dark">
             Sharing experiences in development.
             <br>
             Or just endlessly making bugs ~
@@ -63,22 +62,23 @@
                             gap-2 lg:gap-8">
             <a class="px-4 py-2
                               font-mono font-bold
-                              border rounded-md border-black
-                              bg-black text-white
+                              border rounded-md
+                              border-bg0-dark bg-bg0-dark text-textPrimary-dark dark:border-bg0-light dark:bg-bg0-light dark:text-textPrimary-light
                               text-center w-auto lg:w-52 h-auto
                               hover:opacity-80 transition-colors duration-200" href="#">
               Latest Post
             </a>
             <a class="px-4 py-2
                               font-mono
-                              border rounded-md border-gray-500
+                              border rounded-md
+                              border-bg0-dark bg-bg0-light text-textPrimary-light dark:border-bg0-light dark:bg-bg0-dark dark:text-textPrimary-dark
                               flex flex-row gap-4 items-center
                               justify-center lg:justify-starts
                               w-auto lg:w-52 h-auto
                               hover:bg-black/5 transition-colors duration-200" href="https://github.com/XINICOM" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
                 <g clip-path="url(#logo-github__a)">
-                  <path fill="black" fill-rule="evenodd" d="M8 .13c-4.42 0-8 3.6-8 8.07 0 3.57 2.3 6.58 5.47 7.65.4.08.55-.17.55-.39L6 13.96c-2.23.49-2.7-.95-2.7-.95-.35-.94-.88-1.18-.88-1.18-.73-.5.05-.5.05-.5.8.06 1.23.84 1.23.84.72 1.22 1.87.88 2.33.66.07-.52.28-.88.5-1.08-1.77-.19-3.64-.88-3.64-3.98 0-.88.32-1.6.82-2.16-.07-.2-.35-1.03.08-2.14 0 0 .68-.21 2.2.83a7.7 7.7 0 0 1 4 0c1.53-1.04 2.2-.83 2.2-.83.45 1.11.17 1.94.09 2.14.52.56.82 1.28.82 2.16 0 3.1-1.87 3.78-3.66 3.98.3.26.54.74.54 1.5v2.21c0 .22.14.47.54.4A8.1 8.1 0 0 0 16 8.2 8 8 0 0 0 8 .13" clip-rule="evenodd" />
+                  <path fill="currentColor" fill-rule="evenodd" d="M8 .13c-4.42 0-8 3.6-8 8.07 0 3.57 2.3 6.58 5.47 7.65.4.08.55-.17.55-.39L6 13.96c-2.23.49-2.7-.95-2.7-.95-.35-.94-.88-1.18-.88-1.18-.73-.5.05-.5.05-.5.8.06 1.23.84 1.23.84.72 1.22 1.87.88 2.33.66.07-.52.28-.88.5-1.08-1.77-.19-3.64-.88-3.64-3.98 0-.88.32-1.6.82-2.16-.07-.2-.35-1.03.08-2.14 0 0 .68-.21 2.2.83a7.7 7.7 0 0 1 4 0c1.53-1.04 2.2-.83 2.2-.83.45 1.11.17 1.94.09 2.14.52.56.82 1.28.82 2.16 0 3.1-1.87 3.78-3.66 3.98.3.26.54.74.54 1.5v2.21c0 .22.14.47.54.4A8.1 8.1 0 0 0 16 8.2 8 8 0 0 0 8 .13" clip-rule="evenodd" />
                 </g>
                 <defs>
                   <clipPath id="logo-github__a">
@@ -97,7 +97,7 @@
       </div>
     </div>
     <!-- CONTENT BODY -->
-    <div class="h-auto w-full py-8 font-sans" style="background-color: #FAFAFA;">
+    <div class="h-auto w-full py-8 font-sans">
       <div class="content-body">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores cumque itaque reprehenderit,
         commodi quisquam quaerat nisi soluta quidem blanditiis pariatur saepe totam adipisci error, maiores,
@@ -156,13 +156,15 @@
         molestiae eligendi! Expedita vero pariatur porro dolorum labore, repudiandae laboriosam vel. Minima
         tenetur
         quod vel. Reprehenderit atque eum ex laudantium?
+        <hr class="my-4">
+        瞠身疾国者先仄范爱才倒司德逃，头赏松九非哥十国看，起后学姑动，导衣是妙学亲，中秦有范子投以未，国斯备有觉未没，对那鲜为国太脱，为明亡会楚这时俭来才活沫二败谭，解何是程极是羊老六的反总见县才沉流，没上也可则投和只山种，韩劝日法要并因则份得低月绪，惜名德的光云文大是自为，说以心说关打于，生瞠会非，快法年互后放派都是联于，德入名归狱穿倒求，来位我导找谢她同，人活啊勇孔劝远德感的夫相血骂，上何藏你重师太就，秦不成人变上君但切尘报我，念血了，价是了老，向君打者惜秦仁将而后谭婵说事以，狂性设太判整于他圣洪说日玉得，国书护学，可为蒲瞠风你关领地妙修和，种本二但大，是你谭张修气满，帝回为，同降肯仅秦谋评老名。
       </div>
     </div>
     <!-- BOTTOM -->
-    <div class="h-32 border-t border-gray-300 w-full">
+    <div class="h-32 border-t border-border-light dark:border-border-dark w-full">
       <div class="max-w-7xl mx-auto h-full p-4
                         flex flow-row justify-start items-center gap-4">
-        <div class="text-black/80 font-mono text-sm">
+        <div class="text-textSecondary-light dark:text-textSecondary-dark font-mono text-sm">
           Copyright © 2026 XINICOM (YiCheng ZHOU).<br class="inline sm:hidden">All Rights Reserved.
         </div>
       </div>

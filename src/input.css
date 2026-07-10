@@ -17,9 +17,9 @@ html {
 }
 
 .content-body {
-    @apply max-w-6xl mx-auto px-8
+    @apply max-w-6xl mx-auto px-8 text-textContent-light dark:text-textContent-dark leading-relaxed tracking-wide
 }
 
 .highlight-color {
-    @apply text-red-500 sm:text-orange-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500 2xl:text-purple-500
+    @apply text-red-600 sm:text-orange-600 md:text-yellow-600 lg:text-green-600 xl:text-blue-600 2xl:text-purple-600 dark:text-red-400 dark:sm:text-orange-400 dark:md:text-yellow-400 dark:lg:text-green-400 dark:xl:text-blue-400 dark:2xl:text-purple-400
 }
