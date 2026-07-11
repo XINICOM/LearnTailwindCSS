@@ -11,7 +11,7 @@ module.exports = {
             colors: {
                 border: {
                     light: '#E0E0E0',
-                    dark: '#888888',
+                    dark: '#404040',
                 },
                 textPrimary: {
                     light: '#000000',

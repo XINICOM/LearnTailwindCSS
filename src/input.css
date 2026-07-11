@@ -12,8 +12,8 @@ html {
     scrollbar-width: none;
 }
 
-.text-btn {
-    @apply hover:opacity-60 transition-colors duration-200
+.color-nav-btn {
+    @apply text-textSecondary-light hover:text-textPrimary-light dark:text-textSecondary-dark dark:hover:text-textPrimary-dark
 }
 
 .content-body {
@@ -30,6 +30,14 @@ html {
 
 .theme-btn.active {
     @apply text-textPrimary-light dark:text-textPrimary-dark bg-border-light dark:bg-border-dark cursor-default
+}
+
+.color-floating.color-solid {
+    @apply bg-bg0-light dark:bg-bg0-dark
+}
+
+.color-floating.color-transparent {
+    @apply bg-bg0-light/80 dark:bg-bg0-dark/80 backdrop-blur-lg
 }
 
 @layer components{
