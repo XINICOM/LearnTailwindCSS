@@ -10,16 +10,16 @@ module.exports = {
             },
             colors: {
                 border: {
-                    light: '#E5E5E5',
+                    light: '#E0E0E0',
                     dark: '#888888',
-                },
-                textContent: {
-                    light: '#121212',
-                    dark: '#D6D2CD',
                 },
                 textPrimary: {
                     light: '#000000',
-                    dark: '#FFFFFF',
+                    dark: '#F3F3F3',
+                },
+                textContent: {
+                    light: '#121212',
+                    dark: '#E4E4E4',
                 },
                 textSecondary: {
                     light: '#666666',
@@ -30,8 +30,10 @@ module.exports = {
                     dark: '#121212',
                 },
                 bg1: {
-                    light: '#FAFAFA',
-                    dark: '#272727',
+                    dark: '#1E1E1E',
+                },
+                bg2: {
+                    dark: '#242424',
                 }
             },
         },

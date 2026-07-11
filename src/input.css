@@ -17,7 +17,7 @@ html {
 }
 
 .content-body {
-    @apply max-w-6xl mx-auto px-8 text-textContent-light dark:text-textContent-dark leading-relaxed tracking-wide
+    @apply max-w-6xl mx-auto px-8 leading-loose tracking-wide
 }
 
 .highlight-color {
@@ -30,4 +30,34 @@ html {
 
 .theme-btn.active {
     @apply text-textPrimary-light dark:text-textPrimary-dark bg-border-light dark:bg-border-dark cursor-default
+}
+
+@layer components{
+    .color-border {
+        @apply border-border-light dark:border-border-dark
+    }
+
+    .color-layer-0 {
+        @apply bg-bg0-light dark:bg-bg0-dark
+    }
+
+    .color-layer-1 {
+        @apply bg-bg0-light shadow-md dark:bg-bg1-dark dark:shadow-none
+    }
+
+    .color-layer-2{
+        @apply bg-bg0-light shadow-md dark:bg-bg2-dark dark:shadow-none
+    }
+
+    .color-text-primary {
+        @apply text-textPrimary-light dark:text-textPrimary-dark
+    }
+
+    .color-text-secondary {
+        @apply text-textSecondary-light dark:text-textSecondary-dark
+    }
+
+    .color-text-content{
+        @apply text-textContent-light dark:text-textContent-dark
+    }
 }
