@@ -9,6 +9,7 @@ module.exports = {
                 mono: ['Consolas', 'ui-sans-serif', 'system-ui', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
             },
             colors: {
+                code: '#2C2C2C',
                 border: {
                     light: '#E0E0E0',
                     dark: '#404040',
