@@ -57,24 +57,20 @@ pre {
 } */
 
 pre {
-    width: 96%;
-    margin: auto;
-    border-radius: 15px 15px;
-    border: 3px solid #000;
-    background-color: #445;
-    padding-left: 10px;
-    color: #fff;
-    counter-reset: line; /* 初始化计数器 */
+    @apply bg-code shadow-sm dark:shadow-none text-textContent-dark;
+    @apply border border-border-light dark:border-border-dark rounded-md;
+    counter-reset: line;
 }
 pre ::before {
-    @apply border-r border-border-dark text-border-dark text-right;
-    counter-increment: line; /* 计数器增量。默认增量是 1 */
-    content: counter(line); /* 设置内容为当前行号 */
-    display: inline-block; /* 让行号水平显示 */
-    width: 20px; /* 调整行号宽度 */
-    padding: 0 0.5em;
-    margin-right: 0.5em; /* 调整行号与文本之间的间距 */
+    @apply border-textSecondary-dark text-textSecondary-dark;
+    @apply border-r text-right;
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
 }
+/* width: 20px;
+    padding: 0 0.5em;
+    margin-right: 0.5em; */
 
 /* todo */
 img {

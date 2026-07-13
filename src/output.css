@@ -1289,36 +1289,52 @@ pre {
 } */
 
 pre {
-  width: 96%;
-  margin: auto;
-  border-radius: 15px 15px;
-  border: 3px solid #000;
-  background-color: #445;
-  padding-left: 10px;
-  color: #fff;
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 44 44 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(228 228 228 / var(--tw-text-opacity));
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:is(:where(.dark) pre) {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+pre {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
+}
+
+:is(:where(.dark) pre) {
+  --tw-border-opacity: 1;
+  border-color: rgb(64 64 64 / var(--tw-border-opacity));
+}
+
+pre {
   counter-reset: line;
-  /* 初始化计数器 */
 }
 
 pre ::before {
-  border-right-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(64 64 64 / var(--tw-border-opacity));
-  text-align: right;
+  border-color: rgb(171 171 171 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(64 64 64 / var(--tw-text-opacity));
+  color: rgb(171 171 171 / var(--tw-text-opacity));
+  border-right-width: 1px;
+  text-align: right;
   counter-increment: line;
-  /* 计数器增量。默认增量是 1 */
   content: counter(line);
-  /* 设置内容为当前行号 */
   display: inline-block;
-  /* 让行号水平显示 */
-  width: 20px;
-  /* 调整行号宽度 */
-  padding: 0 0.5em;
-  margin-right: 0.5em;
-  /* 调整行号与文本之间的间距 */
 }
+
+/* width: 20px;
+    padding: 0 0.5em;
+    margin-right: 0.5em; */
 
 /* todo */
 
