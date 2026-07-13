@@ -1288,6 +1288,38 @@ pre {
     word-break: break-all;
 } */
 
+pre {
+  width: 96%;
+  margin: auto;
+  border-radius: 15px 15px;
+  border: 3px solid #000;
+  background-color: #445;
+  padding-left: 10px;
+  color: #fff;
+  counter-reset: line;
+  /* 初始化计数器 */
+}
+
+pre ::before {
+  border-right-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(64 64 64 / var(--tw-border-opacity));
+  text-align: right;
+  --tw-text-opacity: 1;
+  color: rgb(64 64 64 / var(--tw-text-opacity));
+  counter-increment: line;
+  /* 计数器增量。默认增量是 1 */
+  content: counter(line);
+  /* 设置内容为当前行号 */
+  display: inline-block;
+  /* 让行号水平显示 */
+  width: 20px;
+  /* 调整行号宽度 */
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  /* 调整行号与文本之间的间距 */
+}
+
 /* todo */
 
 img {
