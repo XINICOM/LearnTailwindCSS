@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Listen HTML/CSS Change",
+            "type": "shell",
+            "command": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+            "group": "build",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "dynamicDir",
+            "type": "command",
+            "command": "shellCommand.execute",
+            "args": {
+                "command": "dir /ad /b",
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}
