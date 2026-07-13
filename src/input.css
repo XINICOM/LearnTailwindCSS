@@ -51,18 +51,18 @@ p {
     word-break: break-all;
 }
 
-pre {
-    @apply bg-bg0-light dark:bg-code shadow-sm dark:shadow-none text-textContent-light dark:text-textContent-dark;
-    @apply border-2 border-border-light dark:border-border-dark rounded-md lg:rounded-xl;
-    @apply text-sm font-mono;
+/* pre {
+        @apply bg-bg0-light dark:bg-code shadow-sm dark:shadow-none text-textContent-light dark:text-textContent-dark;
+        @apply border-2 border-border-light dark:border-border-dark rounded-md lg:rounded-xl;
+        @apply text-sm font-mono;
     @apply overflow-auto max-h-screen py-2;
-    counter-reset: line;
-    scrollbar-width: auto;
+        counter-reset: line;
+        scrollbar-width: auto;
 }
 pre code {
     @apply inline-block min-w-min w-full;
 }
-/* 行号 */
+行号
 .line-numbers-wrapper ::before {
     @apply inline-block;
     @apply border-textSecondary-dark text-textSecondary-dark;
@@ -75,7 +75,53 @@ pre code {
 }
 .pre-code-line.highlight-line {
     @apply inline-block w-full bg-black/5 dark:bg-bg1-dark text-textPrimary-light dark:text-textPrimary-dark font-semibold;
+} */
+
+/* === PRE TEST === */
+.code-frame {
+    @apply max-h-screen h-96;
+    @apply overflow-auto;
+    @apply shadow-sm dark:shadow-none;
+    @apply border-2 border-border-light dark:border-border-dark;
+    @apply rounded-md lg:rounded-xl;
+    @apply bg-bg0-light dark:bg-code text-textContent-light dark:text-textContent-dark;
 }
+
+.code-view {
+    @apply py-2;
+    @apply text-sm font-mono;
+    @apply grid gap-0;
+    grid-template-columns: auto 1fr;
+}
+
+.code-numbders {
+    @apply select-none text-right;
+    @apply border-r border-textSecondary-dark text-textSecondary-dark;
+    @apply flex flex-col items-stretch;
+}
+.code-numbers-num {
+    @apply pl-4 pr-2;
+}
+.code-numbers-num.code-line-highlight {
+    @apply w-full bg-black/5 dark:bg-bg1-dark text-textPrimary-light dark:text-textPrimary-dark font-semibold;
+}
+.code-content {
+    @apply overflow-x-auto overflow-y-hidden;
+    @apply flex flex-col items-stretch;
+}
+.code-content-pre {
+    @apply min-w-full w-fit;
+}
+.code-content-code {
+    @apply w-full
+}
+.code-content-line {
+    @apply pl-2;
+}
+.code-content-line.code-line-highlight {
+    @apply bg-black/5 dark:bg-bg1-dark text-textPrimary-light dark:text-textPrimary-dark font-semibold;
+}
+/* === PRE TEST === */
 
 /* todo */
 img {
