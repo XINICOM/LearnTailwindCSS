@@ -10,19 +10,10 @@ document.querySelectorAll('pre[data-line-numbers="true"]').forEach((pre) => {
 
     lines.forEach((line, index) => {
         const row = document.createElement("div");
-        row.className = "code-line";
+        row.className = "pre-code-line";
 
-        // const num = document.createElement("span");
-        // num.className = "line-number";
-        // num.textContent = index + 1;
-
-        // const content = document.createElement("span");
-        // content.className = "code-content";
-        // content.textContent = line || "";
         row.textContent = line || "";
 
-        // row.appendChild(num);
-        // row.appendChild(content);
         wrapper.appendChild(row);
     });
 

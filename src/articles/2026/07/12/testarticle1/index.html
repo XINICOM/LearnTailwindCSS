@@ -87,7 +87,7 @@
       </p>
       <h2>创建脚本</h2>
       <p>新建 C# 脚本复制下面代码：</p>
-      <pre data-line-numbers="true"><code class="language-csharp">public class DataBaseManager
+      <pre data-line-numbers="true" highlight-line="1 10"><code class="language-csharp"><span style="color: blue;">public</span> class DataBaseManager
 {
     /// &lt;summary&gt;
     /// 数据库链接
@@ -229,7 +229,7 @@
       <h1>使用案例</h1>
       <p>首先调用<code>ConnectingDatabase(string name)</code>连接到数据库
         之后使用<code>ExecuteQuery(string sqlQuery)</code>执行SQL命令
-        同时也可以使用<code>ReadFullTable_ToString(string tableName)和ReadFullTable(string tableName)</code>快速调用整个表格</p>
+        同时也可以使用<code>ReadFullTable_ToString(string tableName)</code>和<code>(string tableName)</code>快速调用整个表格</p>
     </article>
   </main>
 
