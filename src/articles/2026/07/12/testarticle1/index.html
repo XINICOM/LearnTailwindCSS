@@ -69,7 +69,7 @@
       <h3>Mono.Data.Sqlite.dll</h3>
       <p>自己去unity编辑器的安装路径里面寻找和自己unity版本对应的文件。<br />
         我的文件放在：<code>${UnityEditor安装路径}\Data\MonoBleedingEdge\lib\mono\gac\Mono.Data.Sqlite\4.0.0.0__0738eb9f132ed756\Mono.Data.Sqlite.dll</code><br />
-        把该文件复制到你的项目下Assets/Plugins文件夹下面（没有该文件夹就自己创建一个）</p>
+        把该文件复制到你的项目下<code>Assets/Plugins</code>文件夹下面（没有该文件夹就自己创建一个）</p>
       <h3>System.Data.dll</h3>
       <p>自己去unity编辑器的安装路径里面寻找和自己unity版本对应的文件。
         我的文件放在：<code>${UnityEditor安装路径}\Data\MonoBleedingEdge\lib\mono\unity_web\System.Data.dll</code>
@@ -87,7 +87,7 @@
       </p>
       <h2>创建脚本</h2>
       <p>新建 C# 脚本复制下面代码：</p>
-      <pre data-line-numbers="true" highlight-line="1 10"><code class="language-csharp"><span style="color: blue;">public</span> class DataBaseManager
+      <pre data-line-numbers="true" highlight-lines="1 10 21 50"><code class="language-csharp">public class DataBaseManager
 {
     /// &lt;summary&gt;
     /// 数据库链接

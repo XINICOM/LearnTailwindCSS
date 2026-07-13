@@ -40,7 +40,7 @@ module.exports = {
                     dark: "#1E1E1E",
                 },
                 bg1: {
-                    dark: "#242424",
+                    dark: "#383838",
                 },
             },
         },

@@ -46,32 +46,42 @@ p {
 :not(pre) > code {
     @apply bg-black/5 dark:bg-code;
     @apply text-textContent-light dark:text-textContent-dark;
-    @apply border border-border-light dark:border-border-dark rounded-md;
+    @apply border border-border-light dark:border-border-dark rounded-md lg:rounded-xl;
     @apply px-1 mx-1;
     word-break: break-all;
 }
 
 pre {
-    @apply bg-code shadow-sm dark:shadow-none text-textContent-dark;
-    @apply border border-border-light dark:border-border-dark rounded-md;
+    @apply bg-bg0-light dark:bg-code shadow-sm dark:shadow-none text-textContent-light dark:text-textContent-dark;
+    @apply border-2 border-border-light dark:border-border-dark rounded-md lg:rounded-xl;
     @apply text-sm font-mono;
-    @apply overflow-auto max-h-screen lg:max-h-full;
+    @apply overflow-auto max-h-screen py-2;
     counter-reset: line;
     scrollbar-width: auto;
 }
+pre code {
+    @apply inline-block min-w-min w-full;
+}
+/* 行号 */
 .line-numbers-wrapper ::before {
     @apply inline-block;
     @apply border-textSecondary-dark text-textSecondary-dark;
     @apply border-r text-right;
-    @apply w-10 px-2 mx-2;
+    @apply px-2 mx-2;
     counter-increment: line;
     content: counter(line);
+
+    @apply w-10;
+}
+.pre-code-line.highlight-line {
+    @apply inline-block w-full bg-black/5 dark:bg-bg1-dark text-textPrimary-light dark:text-textPrimary-dark font-semibold;
 }
 
 /* todo */
 img {
-    @apply border rounded-md border-border-light dark:border-border-dark;
+    @apply border rounded-md lg:rounded-xl border-border-light dark:border-border-dark;
     @apply shadow-md dark:shadow-none max-w-3xl mx-auto my-4 w-full lg:w-auto;
+    @apply dark:opacity-90;
 }
 
 hr {
