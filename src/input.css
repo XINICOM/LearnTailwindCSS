@@ -99,7 +99,6 @@ p {
 img {
     @apply border rounded-md lg:rounded-xl border-border-light dark:border-border-dark;
     @apply shadow-md dark:shadow-none max-w-3xl mx-auto my-4 w-full lg:w-auto;
-    @apply dark:opacity-90;
 }
 
 hr {
