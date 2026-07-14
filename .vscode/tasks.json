@@ -10,20 +10,6 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             }
-        },
-        {
-            "label": "Push To Github Folder",
-            "type": "shell",
-            "command": "powershell",
-            "args": [
-                "-Command",
-                "Remove-Item -Path '${workspaceFolder}/../XINICOM.github.io/' -Recurse -Force\nCopy-Item -Path '${workspaceFolder}\\src\\*' -Destination '${workspaceFolder}/../XINICOM.github.io/' -Recurse -Force"
-            ],
-            "group": "build",
-            "problemMatcher": [],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            }
         }
     ],
     "inputs": [
