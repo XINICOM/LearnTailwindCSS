@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v7
 
             - name: Copy SRC(Folder) to temporary deploy folder
               run: |
@@ -18,10 +18,10 @@ jobs:
                   cp -r ./src/* deploy/
 
             - name: Deploy to GitHub Page
-              uses: peaceiris/actions-gh-pages@v3
+              uses: peaceiris/actions-gh-pages@v4
               with:
                   publish_dir: ./deploy
-                  github_token: ${{ secrets.DEPLOY_SECRET }}
+                  personal_token: ${{ secrets.DEPLOY_SECRET }}
                   external_repository: XINICOM/XINICOM.github.io
                   publish_bracnch: main
                   commit_message: AUTO DEPLOYMENT at %date% %time%
