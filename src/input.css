@@ -76,7 +76,7 @@ p {
     @apply text-textSecondary-light hover:text-textPrimary-light dark:text-textSecondary-dark dark:hover:text-textPrimary-dark;
 }
 .code-frame {
-    @apply max-h-screen h-96 max-w-5xl mx-auto;
+    @apply max-h-96 h-fit max-w-5xl mx-auto;
     @apply overflow-auto;
     @apply shadow-sm dark:shadow-none;
     /* @apply border-2 border-border-light dark:border-border-dark; */
@@ -141,10 +141,10 @@ img.dark-img-dim {
 } */
 
 hr {
-    @apply my-4;
+    @apply my-2;
 }
 
-.color-nav-btn {
+.color-text-btn {
     @apply text-textSecondary-light hover:text-textPrimary-light dark:text-textSecondary-dark dark:hover:text-textPrimary-dark;
 }
 
