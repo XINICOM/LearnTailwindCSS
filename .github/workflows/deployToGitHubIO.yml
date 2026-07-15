@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+    push:
+        tags:
+            - V*
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Copy SRC(Folder) to temporary deploy folder
+              run: |
+                  mkdir -p deploy
+                  cp -r ./src/* deploy/
+
+            - name: Deploy to GitHub Page
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  publish_dir: ./deploy
+                  github_token: ${{ secrets.DEPLOY_SECRET }}
+                  external_repository: XINICOM/XINICOM.github.io
+                  publish_bracnch: main
+                  commit_message: AUTO DEPLOYMENT at %date% %time%
