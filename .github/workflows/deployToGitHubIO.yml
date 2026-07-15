@@ -23,5 +23,5 @@ jobs:
                   publish_dir: ./deploy
                   personal_token: ${{ secrets.DEPLOY_SECRET }}
                   external_repository: XINICOM/XINICOM.github.io
-                  publish_bracnch: main
-                  commit_message: AUTO DEPLOYMENT at %date% %time%
+                  publish_branch: main
+                  commit_message: AUTO DEPLOYMENT
