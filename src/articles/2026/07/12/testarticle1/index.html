@@ -9,6 +9,10 @@
         <script defer src="./../../../../../scripts/preToCodeBlock.js"></script>
         <script defer src="./../../../../../scripts/imgWrapper.js"></script>
         <script defer src="./../../../../../scripts/tocGenterator.js"></script>
+        <script
+            defer
+            src="./../../../../../scripts/asideHeightControl.js"
+        ></script>
         <link rel="stylesheet" href="./../../../../../output.css" />
     </head>
 
@@ -78,7 +82,8 @@
                 </div>
             </div>
         </nav>
-        <div class="mt-20 bg-blue-500">
+        <!-- TITLE -->
+        <div class="aside-resize-top mt-16 lg:mt-20 p-8 border-b color-border">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             ab nostrum expedita cupiditate cumque rem vel eligendi. Amet
             sapiente omnis reprehenderit nam, explicabo repellat odio hic neque
@@ -111,10 +116,12 @@
             voluptatibus odit. Animi recusandae nam similique reprehenderit odio
             exercitationem consequatur vitae blanditiis doloremque?
         </div>
+        <!-- MAIN PART (ASIDE + TEXT CONTENT) -->
         <div class="content-body">
-            <div class="hidden lg:block lg:-mt-0 bg-green-500">
-                <div class="py-0 pt-0 sticky top-20 bg-red-500/50">
-                    <div class="max-h-[calc(100vh-5rem)] flex flex-col">
+            <!-- LEFT ASIDE -->
+            <div class="hidden lg:block lg:-mt-0">
+                <div class="py-0 pt-0 sticky top-20">
+                    <div class="aside-height-control-target flex flex-col">
                         <div
                             class="overflow-y-scroll grow"
                             style="overscroll-behavior: contain"
@@ -164,6 +171,7 @@
                     </div>
                 </div>
             </div>
+            <!-- TEXT CONTENT -->
             <main>
                 <article
                     class="text-body color-text-content pb-16 pt-0"
@@ -374,7 +382,7 @@
 
         <!-- BOTTOM -->
         <footer
-            class="pt-8 pb-4 px-4 h-auto border-t color-border w-full flex flex-col justify-center gap-8"
+            class="pt-8 pb-4 px-4 h-auto border-t color-border w-full flex flex-col justify-center gap-8 aside-resize-bottom"
         >
             <div
                 class="w-full h-full flex flex-col md:flex-row justify-start md:justify-end items-center gap-8"

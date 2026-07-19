@@ -44,7 +44,7 @@ if (container && content) {
                     targetElement.getBoundingClientRect().top +
                     window.pageYOffset -
                     (window.innerWidth > 1024 ? 80 : 64);
-                console.log(targetPosition);
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: "smooth",
@@ -83,7 +83,6 @@ function updateActiveLink(headers, links) {
         window.pageYOffset +
         (window.innerWidth > 1024 ? 80 : 64) +
         CONFIG.safety_scroll_offset;
-    console.log(window.pageYOffset);
 
     if (!headers || !links) return;
     for (let i = headers.length - 1; i >= 0; i--) {
