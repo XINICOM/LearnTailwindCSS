@@ -6,9 +6,15 @@ module.exports = {
         extend: {
             fontFamily: {
                 serif: ["宋体", "SimSun", "Songti SC", "serif"],
+                monospace: [],
                 mono: [
                     "Consolas",
                     "ui-monospace",
+                    "SFMono-Regular",
+                    "Menlo",
+                    "Monaco",
+                    "Liberation Mono",
+                    "Courier New",
                     "monospace",
                     "ui-sans-serif",
                     "system-ui",
