@@ -69,19 +69,18 @@
             >
                 <div>
                     <div
-                        class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border"
+                        class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border font-semibold"
                     >
                         contents
                     </div>
                     <div
-                        id="toc"
-                        class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
+                        class="toc flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
                     ></div>
                 </div>
                 <!-- <hr /> -->
                 <div>
                     <div
-                        class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border"
+                        class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border font-semibold"
                     >
                         navigation
                     </div>
@@ -97,7 +96,9 @@
             </div>
         </nav>
         <!-- TITLE -->
-        <div class="aside-resize-top mt-16 lg:mt-20 p-8 border-b color-border">
+        <div
+            class="aside-resize-top mt-16 lg:mt-20 p-8 border-b color-border color-text-content"
+        >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             ab nostrum expedita cupiditate cumque rem vel eligendi. Amet
             sapiente omnis reprehenderit nam, explicabo repellat odio hic neque
@@ -133,55 +134,24 @@
         <!-- MAIN PART (ASIDE + TEXT CONTENT) -->
         <div class="content-body">
             <!-- LEFT ASIDE -->
-            <div class="hidden lg:block">
+            <div class="hidden lg:block border-r color-border">
                 <div class="py-0 pt-0 sticky top-20">
                     <aside
-                        class="aside-height-control-target flex flex-col bg-blue-500"
+                        class="aside-height-control-target flex flex-col text-sm"
                     >
                         <div
                             class="overflow-y-scroll grow"
                             style="overscroll-behavior: contain"
                         >
-                            <div class="h-fit w-full">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Repudiandae voluptate
-                                dignissimos vel omnis voluptates odio illum quae
-                                quos possimus nobis ipsum consequuntur, commodi
-                                sapiente assumenda. Culpa recusandae ab tempora
-                                nulla, cupiditate quis dignissimos cum
-                                laboriosam modi repellat nemo voluptates
-                                praesentium fuga suscipit impedit obcaecati
-                                alias ad excepturi harum facilis soluta aperiam,
-                                fugit totam? In consequuntur fuga, recusandae
-                                tempore quaerat commodi ad molestiae! Amet vel
-                                qui recusandae sit ex delectus nostrum deserunt
-                                pariatur facilis, unde eos. Quibusdam corrupti
-                                beatae amet, officiis tenetur, tempore dolore
-                                soluta obcaecati nesciunt aliquam unde ipsum
-                                vero et. Soluta esse necessitatibus, veritatis
-                                impedit nesciunt iores, laborum repudiandae
-                                reiciendis. Consequatur vero voluptas explicabo
-                                unde dolorem doloremque temporibus error, labore
-                                perspiciatis? Fuga nam culpa aperiam? Culpa
-                                quidem qui voluptas modi beatae! Rem, veniam
-                                illum? Aliquam atque expedita totam voluptatibus
-                                facere iste, laborum culpa veniam numquam, eos
-                                iusto, vero quod saepe laudantium? Autem odit
-                                rem placeat excepturi quam. Incidunt magni unde
-                                ad numquam hic minima cum, id animi sapiente
-                                pariatur asperiores voluptatibus ipsa at optio,
-                                nisi itaque sed laboriosam architecto
-                                perferendis perspiciatis assumenda vitae!
-                                Ratione similique est consequuntur itaque id,
-                                veritatis nesciunt dicta ullam, laboriosam rem
-                                enim vel aliquid mollitia excepturi praesentium.
-                                Sit a atque odit, earum sed tenetur similique
-                                reprehenderit voluptate repellendus esse
-                                quisquam ipsum quas expedita doloribus fugiat
-                                quia cumque dolorem quos laudantium quam, autem
-                                rem accusantium eos. Incidunt perferendis illum
-                                dolorem, cumque non quas quis atque tenetur amet
-                                eum. In, soluta odit!
+                            <div class="pb-2 px-4 hidden lg:block 2xl:hidden">
+                                <div
+                                    class="uppercase tracking-wider text-center pt-4 pb-2 sticky top-0 border-b color-border color-text-primary color-layer-0 font-semibold"
+                                >
+                                    contents
+                                </div>
+                                <div
+                                    class="toc flex flex-col gap-4 w-full capitalize tracking-wide py-2 px-4"
+                                ></div>
                             </div>
                         </div>
                     </aside>
@@ -395,19 +365,25 @@
                 </article>
             </main>
             <!-- RIGHT ASIDE -->
-            <div class="hidden 2xl:block">
+            <div class="hidden 2xl:block border-l color-border">
                 <div class="py-0 pt-0 sticky top-20">
                     <aside
-                        class="aside-height-control-target flex flex-col bg-red-500"
+                        class="aside-height-control-target flex flex-col text-sm"
                     >
                         <div
                             class="overflow-y-scroll grow"
                             style="overscroll-behavior: contain"
                         >
-                            <div
-                                id="toc"
-                                class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
-                            ></div>
+                            <div class="pb-2 px-4">
+                                <div
+                                    class="uppercase tracking-wider text-center pt-4 pb-2 sticky top-0 border-b color-border color-text-primary color-layer-0 font-semibold"
+                                >
+                                    contents
+                                </div>
+                                <div
+                                    class="toc flex flex-col gap-4 w-full capitalize tracking-wide py-2 px-4"
+                                ></div>
+                            </div>
                         </div>
                     </aside>
                 </div>
