@@ -8,6 +8,8 @@ module.exports = {
                 serif: ["宋体", "SimSun", "Songti SC", "serif"],
                 mono: [
                     "Consolas",
+                    "ui-monospace",
+                    "monospace",
                     "ui-sans-serif",
                     "system-ui",
                     "sans-serif",
