@@ -701,6 +701,10 @@ video {
   display: flex;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -818,6 +822,10 @@ video {
   gap: 2rem;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-y-6 {
   row-gap: 1.5rem;
 }
@@ -844,6 +852,11 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 
 .border-b {
@@ -880,6 +893,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-4 {
@@ -993,6 +1010,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .capitalize {

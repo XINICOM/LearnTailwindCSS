@@ -64,21 +64,35 @@
             </header>
             <!-- NAV MENU 此 classlist 受代码控制！-->
             <div
-                class="fixed overflow-auto hidden flex-col justify-start lg:hidden left-0 right-0 top-16 bottom-0 gap-6 px-8 py-4 color-floating color-transparent transition-colors duration-100 font-sans"
+                class="fixed overflow-auto hidden flex-col justify-start lg:hidden left-0 right-0 top-16 bottom-0 gap-0 p-0 color-floating color-transparent transition-colors duration-100 font-sans"
                 id="navmenu"
             >
-                <div
-                    id="toc"
-                    class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide"
-                ></div>
-                <hr />
-                <div
-                    class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide"
-                >
-                    <a href="#" class="color-text-btn">column</a>
-                    <a href="#" class="color-text-btn">category</a>
-                    <a href="#" class="color-text-btn">archieve</a>
-                    <a href="#" class="color-text-btn">about</a>
+                <div>
+                    <div
+                        class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border"
+                    >
+                        contents
+                    </div>
+                    <div
+                        id="toc"
+                        class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
+                    ></div>
+                </div>
+                <!-- <hr /> -->
+                <div>
+                    <div
+                        class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border"
+                    >
+                        navigation
+                    </div>
+                    <div
+                        class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
+                    >
+                        <a href="#" class="color-text-btn">column</a>
+                        <a href="#" class="color-text-btn">category</a>
+                        <a href="#" class="color-text-btn">archieve</a>
+                        <a href="#" class="color-text-btn">about</a>
+                    </div>
                 </div>
             </div>
         </nav>
