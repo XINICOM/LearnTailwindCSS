@@ -133,14 +133,16 @@
         <!-- MAIN PART (ASIDE + TEXT CONTENT) -->
         <div class="content-body">
             <!-- LEFT ASIDE -->
-            <div class="hidden lg:block lg:-mt-0">
+            <div class="hidden lg:block">
                 <div class="py-0 pt-0 sticky top-20">
-                    <div class="aside-height-control-target flex flex-col">
+                    <aside
+                        class="aside-height-control-target flex flex-col bg-blue-500"
+                    >
                         <div
                             class="overflow-y-scroll grow"
                             style="overscroll-behavior: contain"
                         >
-                            <aside class="h-fit w-full">
+                            <div class="h-fit w-full">
                                 Lorem ipsum, dolor sit amet consectetur
                                 adipisicing elit. Repudiandae voluptate
                                 dignissimos vel omnis voluptates odio illum quae
@@ -180,9 +182,9 @@
                                 rem accusantium eos. Incidunt perferendis illum
                                 dolorem, cumque non quas quis atque tenetur amet
                                 eum. In, soluta odit!
-                            </aside>
+                            </div>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
             <!-- TEXT CONTENT -->
@@ -392,6 +394,24 @@
                     </p>
                 </article>
             </main>
+            <!-- RIGHT ASIDE -->
+            <div class="hidden 2xl:block">
+                <div class="py-0 pt-0 sticky top-20">
+                    <aside
+                        class="aside-height-control-target flex flex-col bg-red-500"
+                    >
+                        <div
+                            class="overflow-y-scroll grow"
+                            style="overscroll-behavior: contain"
+                        >
+                            <div
+                                id="toc"
+                                class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
+                            ></div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </div>
 
         <!-- BOTTOM -->
