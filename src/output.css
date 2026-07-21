@@ -1134,6 +1134,7 @@ html {
   padding-left: 0.5rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -2059,10 +2060,6 @@ img.dark-img-dim {
 @media (min-width: 1536px) {
   .\32xl\:block {
     display: block;
-  }
-
-  .\32xl\:hidden {
-    display: none;
   }
 
   .\32xl\:grid-cols-\[18rem_1fr_18rem\] {
