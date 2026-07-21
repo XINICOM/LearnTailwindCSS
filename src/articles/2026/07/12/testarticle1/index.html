@@ -39,10 +39,10 @@
                     <div
                         class="hidden lg:flex flex-row gap-8 text-lg lg:text-xl capitalize font-sans tracking-wide"
                     >
-                        <a href="#" class="color-text-btn">column</a>
-                        <a href="#" class="color-text-btn">category</a>
-                        <a href="#" class="color-text-btn">archieve</a>
-                        <a href="#" class="color-text-btn">about</a>
+                        <a href="#" class="color-text-btn">专栏</a>
+                        <a href="#" class="color-text-btn">分类</a>
+                        <a href="#" class="color-text-btn">标签</a>
+                        <a href="#" class="color-text-btn">存档</a>
                     </div>
                     <button class="color-text-btn block lg:hidden" id="navbtn">
                         <svg
@@ -71,7 +71,7 @@
                     <div
                         class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border font-semibold"
                     >
-                        contents
+                        目录
                     </div>
                     <div
                         class="toc flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
@@ -81,24 +81,24 @@
                     <div
                         class="text-lg uppercase tracking-wider text-center color-floating color-solid py-2 sticky top-0 border-y color-border font-semibold"
                     >
-                        navigation
+                        导航
                     </div>
                     <div
                         class="flex flex-col gap-4 w-full text-lg capitalize tracking-wide py-2 px-8"
                     >
-                        <a href="#" class="color-text-btn">column</a>
-                        <a href="#" class="color-text-btn">category</a>
-                        <a href="#" class="color-text-btn">archieve</a>
-                        <a href="#" class="color-text-btn">about</a>
+                        <a href="#" class="color-text-btn">专栏</a>
+                        <a href="#" class="color-text-btn">分类</a>
+                        <a href="#" class="color-text-btn">标签</a>
+                        <a href="#" class="color-text-btn">存档</a>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- TITLE -->
         <div
-            class="aside-resize-top mt-16 lg:mt-20 py-8 px-12 border-b color-border color-text-content"
+            class="aside-resize-top mt-16 lg:mt-20 border-b color-border color-text-content"
         >
-            <div class="article-header">
+            <div class="article-header py-8 px-12">
                 <div class="article-title">Unity 在安卓平台使用 SQLite</div>
                 <!-- <img
                     class="article-cover"
@@ -114,31 +114,31 @@
                             class="color-text-btn article-tag-item"
                             href="#"
                             target="_blank"
-                            >#Android</a
+                            >Android</a
                         >
                         <a
                             class="color-text-btn article-tag-item"
                             href="#"
                             target="_blank"
-                            >#Unity</a
+                            >Unity</a
                         >
                         <a
                             class="color-text-btn article-tag-item"
                             href="#"
                             target="_blank"
-                            >#C#</a
+                            >CSharp</a
                         >
                         <a
                             class="color-text-btn article-tag-item"
                             href="#"
                             target="_blank"
-                            >#SQLite</a
+                            >SQLite</a
                         >
                         <a
                             class="color-text-btn article-tag-item"
                             href="#"
                             target="_blank"
-                            >#数据库</a
+                            >数据库</a
                         >
                     </div>
                 </div>
@@ -147,9 +147,8 @@
                         分类
                     </div>
                     <div class="article-categories-content">
-                        <a class="color-text-btn" href="#">category1</a> >
-                        <a class="color-text-btn" href="#">category2</a> >
-                        <a class="color-text-btn" href="#">category3</a>
+                        <a class="color-text-btn" href="#">编程</a> >
+                        <a class="color-text-btn" href="#">游戏开发</a>
                     </div>
                 </div>
                 <div class="article-first_publish_time">
@@ -204,7 +203,7 @@
                                 <div
                                     class="uppercase tracking-wider text-center pt-4 pb-2 sticky top-0 border-b color-border color-text-primary color-layer-0 font-semibold"
                                 >
-                                    contents
+                                    目录
                                 </div>
                                 <div
                                     class="toc flex flex-col gap-4 w-full capitalize tracking-wide py-2 px-4"
@@ -223,9 +222,11 @@
                     <!-- 直接包含生成器的生成内容，具体的结构由前端 JS 渲染 -->
                     <h1>前言</h1>
                     <p>
-                        相信大家在进行 Unity 开发中使用 <code>Sqlite</code>
+                        相信大家在进行 <code>Unity</code> 开发中使用
+                        <code>Sqlite</code>
                         等数据库已经十分复杂了，而如果想要其打包出的平台上也可以使用就更麻烦了。下面为大家介绍一种，我实测有效的方法。
-                        <br />
+                    </p>
+                    <p>
                         本人是新手，如有纰漏，敬请谅解并请在评论区指出，谢谢。
                     </p>
                     <h1>实践步骤</h1>
