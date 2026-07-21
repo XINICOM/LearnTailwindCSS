@@ -643,6 +643,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -775,6 +779,10 @@ video {
   gap: 4rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -863,6 +871,11 @@ video {
   padding: 2rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -886,6 +899,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-16 {
@@ -1036,51 +1054,23 @@ html {
 /* LAYOUT */
 
 .article-header {
-  --tw-border-opacity: 1;
-  border-color: rgb(224 224 224 / var(--tw-border-opacity));
-}
-
-:is(:where(.dark) .article-header) {
-  --tw-border-opacity: 1;
-  border-color: rgb(64 64 64 / var(--tw-border-opacity));
-}
-
-.article-header {
-  --tw-text-opacity: 1;
-  color: rgb(18 18 18 / var(--tw-text-opacity));
-}
-
-:is(:where(.dark) .article-header) {
-  --tw-text-opacity: 1;
-  color: rgb(212 212 212 / var(--tw-text-opacity));
-}
-
-.article-header {
-  margin-top: 4rem;
-  border-bottom-width: 1px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-@media (min-width: 1024px) {
-  .article-header {
-    margin-top: 5rem;
-  }
-}
-
-.article-header {
+  /* @apply mt-16 lg:mt-20 py-8 px-12 border-b color-border color-text-content; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 56rem;
+  letter-spacing: 0.025em;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
-        "article-title article-title article-cover"
-        "article-tags article-tags article-cover"
-        "article-categories article-categories article-cover"
-        "article-first_publish_time article-first_publish_place article-cover"
-        "article-publish_time article-expect_reading_time article-cover";
+        "article-title article-title"
+        "article-tags article-tags"
+        "article-categories article-categories"
+        "article-first_publish_time article-first_publish_place"
+        "article-publish_time article-expect_reading_time";
 }
 
 .article-header > .article-title {
@@ -1107,14 +1097,12 @@ html {
 
 .article-header > .article-tags {
   grid-area: article-tags;
-  letter-spacing: 0.05em;
   display: flex;
   flex-direction: row;
 }
 
 .article-header > .article-categories {
   grid-area: article-categories;
-  letter-spacing: 0.05em;
 }
 
 .article-header > .article-cover {
@@ -1123,6 +1111,38 @@ html {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
+}
+
+@media (min-width: 1024px) {
+  .article-header > .article-cover {
+    border-radius: 0.75rem;
+  }
+}
+
+:is(:where(.dark) .article-header > .article-cover) {
+  --tw-border-opacity: 1;
+  border-color: rgb(64 64 64 / var(--tw-border-opacity));
+}
+
+.article-header > .article-cover {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:is(:where(.dark) .article-header > .article-cover) {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.article-header > .article-cover {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .content-body {
@@ -1612,6 +1632,16 @@ img.dark-img-dim {
   color: rgb(243 243 243 / var(--tw-text-opacity));
 }
 
+.color-text-btn.active {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+:is(:where(.dark) .color-text-btn.active) {
+  --tw-text-opacity: 1;
+  color: rgb(243 243 243 / var(--tw-text-opacity));
+}
+
 .highlight-color {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -1812,6 +1842,10 @@ img.dark-img-dim {
 @media (min-width: 1024px) {
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:block {

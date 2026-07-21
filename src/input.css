@@ -14,16 +14,19 @@ html {
 
 /* LAYOUT */
 .article-header {
-    @apply mt-16 lg:mt-20 py-8 px-12 border-b color-border color-text-content;
-    @apply grid gap-4;
-    grid-template-columns: 1fr 1fr 1.5fr;
+    /* @apply mt-16 lg:mt-20 py-8 px-12 border-b color-border color-text-content; */
+    @apply max-w-4xl mx-auto;
+    @apply tracking-wide;
+    @apply grid gap-2;
+    @apply text-lg;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
-        "article-title article-title article-cover"
-        "article-tags article-tags article-cover"
-        "article-categories article-categories article-cover"
-        "article-first_publish_time article-first_publish_place article-cover"
-        "article-publish_time article-expect_reading_time article-cover";
+        "article-title article-title"
+        "article-tags article-tags"
+        "article-categories article-categories"
+        "article-first_publish_time article-first_publish_place"
+        "article-publish_time article-expect_reading_time";
 }
 .article-header > .article-title {
     grid-area: article-title;
@@ -43,17 +46,19 @@ html {
 }
 .article-header > .article-tags {
     grid-area: article-tags;
-    @apply tracking-wider;
     @apply flex flex-row;
 }
 .article-header > .article-categories {
     grid-area: article-categories;
-    @apply tracking-wider;
 }
 .article-header > .article-cover {
     grid-area: article-cover;
     @apply max-w-full max-h-full;
     @apply mx-auto;
+
+    @apply border rounded-md lg:rounded-xl border-border-light dark:border-border-dark;
+    @apply shadow-md dark:shadow-none;
+    @apply max-w-full max-h-full;
 }
 .content-body {
     @apply w-screen min-h-screen;
@@ -196,6 +201,9 @@ img.dark-img-dim {
 /* COLOR + THEME */
 .color-text-btn {
     @apply text-textSecondary-light hover:text-textPrimary-light dark:text-textSecondary-dark dark:hover:text-textPrimary-dark;
+}
+.color-text-btn.active {
+    @apply text-textPrimary-light dark:text-textPrimary-dark;
 }
 .highlight-color {
     @apply text-red-500 sm:text-orange-500 md:text-yellow-500 lg:text-green-600 xl:text-blue-600 2xl:text-purple-600 dark:text-red-300 dark:sm:text-orange-300 dark:md:text-yellow-200 dark:lg:text-green-300 dark:xl:text-blue-300 dark:2xl:text-purple-300;
