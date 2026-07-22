@@ -86,9 +86,9 @@ html {
     @apply px-1;
     /* word-break: break-all; */
 }
-.article-header .article-tag-item::before {
+/* .article-header .article-tag-item::before {
     content: "# ";
-}
+} */
 .article-header > .article-categories {
     grid-area: article-categories;
     @apply grid;
@@ -196,9 +196,9 @@ html {
     @apply border border-border-light dark:border-border-dark rounded-md;
     @apply px-1;
 }
-.archive-cards .archive-tags-item::before {
+/* .archive-cards .archive-tags-item::before {
     content: '# ';
-}
+} */
 
 /* COMMON TAG */
 article h1 {
