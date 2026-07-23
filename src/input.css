@@ -162,9 +162,6 @@ article .callout .callout-title {
     @apply px-1;
     /* word-break: break-all; */
 }
-/* .article-header .article-tag-item::before {
-    content: "# ";
-} */
 .article-header > .article-categories {
     grid-area: article-categories;
     @apply grid;
